@@ -1,0 +1,53 @@
+#skills {
+    padding: 100px 0;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        opacity: 0;
+        .skills_title {
+            margin-bottom: 30px;
+            h1 {
+                @include title;
+            }
+        }
+        .row {
+            .experiences {
+                width: calc(50% - 40px);
+                margin: 0 20px;
+                ul {
+                    li {
+                        padding: 15px;
+                        margin-bottom: 30px;
+                        border-radius: 5px;
+                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);                    
+                        p {
+                            margin: 10px 0;
+                            &.data {
+                                color: $secondary_text;
+                                font-size: 25px;
+                            }
+                            &.azienda {
+                                color: $primary_text;
+                                font-size: 23px;
+                            }
+                            &.info {
+                                color: $descriptions;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .skills {
+                width: calc(50% - 40px);
+                margin: 0 20px;
+                align-items: center;
+                img {
+                    border-radius: 5px;
+                    width: 100%;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                }
+            }
+        }
+    }
+}

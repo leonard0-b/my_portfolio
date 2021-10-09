@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+     <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <title>leonardo.</title>
+</head>
+<body>
+    <div id="root">
+        <section id="home">
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <div class="logo-content flex">
+                            <ul class="flex">
+                                <li><a href="#home">leonardo.</a></li>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#progetti">progetti</a></li>
+                                <li><a href="#skills">skills</a></li>
+                                <li><a href="#contatti">contatti</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </nav>
+            <div class="container flex">
+                <div class="title">
+                    <h1>
+                        Hello!
+                    </h1>
+                    <h3>
+                        sono Leonardo, un jr web developer :)
+                    </h3>
+                </div>    
+            </div>
+        </section>
+        <section id="about" class="flex">
+            <div class="container flex">
+                <div class="about_title">
+                    <h1>
+                        Un titolo
+                    </h1>
+                    <h3>
+                        un sottotitolo
+                    </h3>
+                    <p>
+                        scrivere qualcosa di simpatico :)
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="progetti">
+            <div class="container">
+                <div class="progetti_title">
+                    <h1>
+                        I miei progetti
+                    </h1>
+                    <h3>
+                        fatti con passione
+                    </h3>
+                </div>
+                <div class="row flex">
+                    <div class="card" v-for="progetto in progetti">
+                        <div class="card-img flex">
+                            <img :src="progetto.img" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <h3>
+                                {{progetto.name}}
+                            </h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos, aliquid magnam repellat odit ab maxime molestias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <div class="skills_title">
+                    <h1>
+                        Esperienze & Skills
+                    </h1>
+                </div>
+                <div class="row flex">
+                    <div class="experiences">
+                        <ul>
+                            <li v-for="esperienza in esperienze">
+                                <p class="data">{{esperienza.data}}</p>
+                                <p class="azienda">{{esperienza.azienda}}</p>
+                                <p class="info">{{esperienza.info}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills flex">
+                        <img src="./assets/img/carbon.png" alt="skills">
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section id="contatti">
+            <div class="container">
+                <div class="contatti_text">
+                    <h1>
+                        That's all.
+                    </h1>
+                    <h3>
+                        Se quello che hai visto ti è piaciuto
+                    </h3>
+                    <h3>
+                        scrivimi:
+                    </h3>
+                    <h3 class="mail">
+                        leonardo.bongianni@gmail.com
+                    </h3>    
+                </div>
+                <div class="others flex">
+                    <p>
+                        Puoi trovarmi anche qui:
+                    </p>
+                    <ul class="flex">
+                        <li><a href="https://www.linkedin.com/in/l-bongianni/" class="linkedin" target=”_blank”>Linkedin</a></li>
+                        <li><a href="" class="instagram" target=”_blank”>Instagram</a></li>
+                        <li><a href="" class="facebook" target=”_blank”>Facebook</a></li>
+                        <li><a href="" class="spotify" target=”_blank”>Spotify</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- script di axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+    <!-- script di Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- script di JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <!-- my script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

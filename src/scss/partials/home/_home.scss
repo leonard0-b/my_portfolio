@@ -1,0 +1,53 @@
+#home {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        background-color: #fff;
+        .container {
+            width: 95%;
+            margin: 0 auto;
+            .logo {
+                .logo-content {
+                    height: 80px;
+                    align-items: center;
+                    ul {
+                        width: 105px;
+                        overflow: hidden;
+                        transition: width 0.8s;
+                        li {
+                            margin: 0 15px;
+                            a {
+                                font-size: $mid;
+                                font-weight: $medium;
+                                color: $primary_text;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+    }
+    .container {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+        .title {
+            opacity: 0;
+            h1 {
+                font-size: 100px;
+                color: $primary_text;
+            }
+            h3 {
+                font-size: 70px;
+                color: $secondary_text;
+            }
+        }
+    }
+}

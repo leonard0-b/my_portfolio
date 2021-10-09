@@ -1,0 +1,9 @@
+@mixin title {
+    font-size: 60px;
+    color: $primary_text;
+}
+
+@mixin subtitle {
+    font-size: 45px;
+    color: $secondary_text;
+}
