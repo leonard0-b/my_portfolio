@@ -23,6 +23,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.compensa {
+  margin: 0 -20px;
+}
+
 #home {
   width: 100vw;
   height: calc(100vh - 80px);
@@ -50,12 +54,16 @@ html {
   transition: width 0.8s;
 }
 #home nav .container .logo .logo-content ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 #home nav .container .logo .logo-content ul li a {
   font-size: 20px;
   font-weight: 500;
-  color: #4F759B;
+  color: #17857f;
+  transition: color 0.5s;
+}
+#home nav .container .logo .logo-content ul li a:hover {
+  color: rgba(23, 133, 127, 0.8);
 }
 #home .container {
   width: 80%;
@@ -68,11 +76,11 @@ html {
 }
 #home .container .title h1 {
   font-size: 100px;
-  color: #4F759B;
+  color: #17857f;
 }
 #home .container .title h3 {
   font-size: 70px;
-  color: rgba(79, 117, 155, 0.6);
+  color: rgba(23, 133, 127, 0.6);
 }
 
 #about {
@@ -92,11 +100,11 @@ html {
 }
 #about .container .about_title h1 {
   font-size: 60px;
-  color: #4F759B;
+  color: #17857f;
 }
 #about .container .about_title h3 {
   font-size: 45px;
-  color: rgba(79, 117, 155, 0.6);
+  color: rgba(23, 133, 127, 0.6);
 }
 #about .container .about_title p {
   margin-top: 30px;
@@ -115,16 +123,15 @@ html {
 }
 #progetti .container .progetti_title h1 {
   font-size: 60px;
-  color: #4F759B;
+  color: #17857f;
 }
 #progetti .container .progetti_title h3 {
   font-size: 45px;
-  color: rgba(79, 117, 155, 0.6);
+  color: rgba(23, 133, 127, 0.6);
 }
 #progetti .container .row {
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 -20px;
   opacity: 0;
 }
 #progetti .container .row .card {
@@ -153,14 +160,40 @@ html {
 }
 #progetti .container .row .card .card-desc h3 {
   font-size: 30px;
-  color: #4F759B;
+  color: #17857f;
   margin-bottom: 15px;
 }
 #progetti .container .row .card .card-desc p {
   font-size: 18px;
-  color: rgba(79, 117, 155, 0.8);
+  color: rgba(23, 133, 127, 0.8);
 }
 
+@media all and (max-width: 1200px) {
+  #progetti .container {
+    width: 90%;
+  }
+
+  #progetti .container .row {
+    margin: 0;
+  }
+
+  #progetti .container .row .card {
+    width: calc(50% - 20px);
+    margin: 30px 10px;
+  }
+
+  #progetti .container .progetti_title h1 {
+    margin: 0 10px;
+  }
+
+  #progetti .container .progetti_title h3 {
+    margin: 0 10px;
+  }
+
+  .compensa {
+    margin: 0 -10px;
+  }
+}
 #skills {
   padding: 100px 0;
 }
@@ -174,7 +207,10 @@ html {
 }
 #skills .container .skills_title h1 {
   font-size: 60px;
-  color: #4F759B;
+  color: #17857f;
+}
+#skills .container .row {
+  margin: 0 -20px;
 }
 #skills .container .row .experiences {
   width: calc(50% - 40px);
@@ -190,15 +226,15 @@ html {
   margin: 10px 0;
 }
 #skills .container .row .experiences ul li p.data {
-  color: rgba(79, 117, 155, 0.6);
+  color: rgba(23, 133, 127, 0.6);
   font-size: 25px;
 }
 #skills .container .row .experiences ul li p.azienda {
-  color: #4F759B;
+  color: #17857f;
   font-size: 23px;
 }
 #skills .container .row .experiences ul li p.info {
-  color: rgba(79, 117, 155, 0.8);
+  color: rgba(23, 133, 127, 0.8);
   font-size: 20px;
 }
 #skills .container .row .skills {
@@ -212,6 +248,23 @@ html {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+@media all and (max-width: 1200px) {
+  #skills .container {
+    width: 90%;
+  }
+
+  #skills .container .row .experiences {
+    width: 100%;
+  }
+
+  #skills .container .row .skills {
+    width: 100%;
+  }
+
+  #skills .container .row {
+    flex-wrap: wrap;
+  }
+}
 #contatti {
   padding-top: 150px;
   padding-bottom: 50px;
@@ -225,18 +278,18 @@ html {
 }
 #contatti .container .contatti_text h1 {
   font-size: 60px;
-  color: #4F759B;
+  color: #17857f;
 }
 #contatti .container .contatti_text h3 {
   font-size: 45px;
-  color: rgba(79, 117, 155, 0.6);
+  color: rgba(23, 133, 127, 0.6);
   transition: color 0.4s;
 }
 #contatti .container .contatti_text h3.mail {
   display: inline-block;
 }
 #contatti .container .contatti_text h3.mail:hover {
-  color: #4F759B;
+  color: #17857f;
 }
 #contatti .container .others {
   opacity: 0;
@@ -245,14 +298,14 @@ html {
   justify-content: space-between;
 }
 #contatti .container .others p {
-  color: #4F759B;
+  color: #17857f;
   font-size: 20px;
 }
 #contatti .container .others ul li {
   margin: 0 10px;
 }
 #contatti .container .others ul li a {
-  color: rgba(79, 117, 155, 0.8);
+  color: rgba(23, 133, 127, 0.8);
   font-size: 20px;
   transition: color 0.4s;
 }
@@ -267,4 +320,10 @@ html {
 }
 #contatti .container .others ul li a.spotify:hover {
   color: #1DB954;
+}
+
+@media all and (max-width: 1200px) {
+  #contatti .container {
+    width: 90%;
+  }
 }

@@ -11,6 +11,7 @@
             }
         }
         .row {
+            margin: 0 -20px;
             .experiences {
                 width: calc(50% - 40px);
                 margin: 0 20px;
@@ -50,4 +51,23 @@
             }
         }
     }
+}
+
+@media all and (max-width: 1200px) {
+    #skills .container {
+        width: 90%;
+    }
+
+    #skills .container .row .experiences {
+        width: 100%;
+    }
+
+    #skills .container .row .skills {
+        width: 100%;
+    }
+
+    #skills .container .row {
+        flex-wrap: wrap;
+    }
+
 }

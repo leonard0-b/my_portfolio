@@ -54,3 +54,9 @@
         }
     }
 }
+
+@media all and (max-width: 1200px) {
+    #contatti .container {
+        width: 90%;
+    }
+}

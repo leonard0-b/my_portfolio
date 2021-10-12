@@ -56,7 +56,7 @@ gsap.to("#home > .container > .title", {
   // start the animation when "#two" enters the viewport (once)
   y: 20,
   opacity: 1,
-  duration: 0.5
+  duration: 1
 });
 gsap.to(".about_title", {
   //from muove da destra verso sinistra

@@ -66,20 +66,22 @@
                         fatti con passione
                     </h3>
                 </div>
-                <div class="row flex">
-                    <div class="card" v-for="progetto in progetti">
-                        <div class="card-img flex">
-                            <img :src="progetto.img" alt="">
+                <div class="compensa">
+                    <div class="row flex">
+                        <div class="card" v-for="progetto in progetti">
+                            <div class="card-img flex">
+                                <img :src="progetto.img" alt="">
+                            </div>
+                            <div class="card-desc">
+                                <h3>
+                                    {{progetto.name}}
+                                </h3>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos, aliquid magnam repellat odit ab maxime molestias.
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-desc">
-                            <h3>
-                                {{progetto.name}}
-                            </h3>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos, aliquid magnam repellat odit ab maxime molestias.
-                            </p>
-                        </div>
-                    </div>
+                    </div>    
                 </div>
             </div>
         </section>

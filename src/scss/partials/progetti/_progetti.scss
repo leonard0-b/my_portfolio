@@ -16,7 +16,6 @@
         .row {
             flex-wrap: wrap;
             width: 100%;
-            margin: 0 -20px;
             opacity: 0;
             .card {
                 width: calc(50% - 40px);
@@ -53,4 +52,32 @@
             } 
         }
     }
+}
+
+@media all and (max-width: 1200px) {
+    #progetti .container {
+        width: 90%;
+    }
+
+    #progetti .container .row {
+        margin: 0;
+    }
+
+    #progetti .container .row .card {
+        width: calc(50% - 20px);
+        margin: 30px 10px;
+    }
+
+    #progetti .container .progetti_title h1 {
+        margin: 0 10px;
+    }
+
+    #progetti .container .progetti_title h3 {
+        margin: 0 10px;
+    }
+
+    .compensa {
+        margin: 0 -10px;
+    }
+
 }
