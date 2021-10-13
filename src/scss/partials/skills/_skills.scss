@@ -79,3 +79,12 @@
 
 }
 
+@media all and (max-width: 576px) {
+    #skills .container .row .experiences ul li p.info, 
+    #skills .container .row .experiences ul li p.azienda,
+    #skills .container .row .experiences ul li p.data {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
