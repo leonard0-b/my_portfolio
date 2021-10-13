@@ -413,7 +413,7 @@ html {
 } */
 @media all and (max-width: 576px) {
   #contatti .container .contatti_text h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   #contatti .container .contatti_text h3 {
