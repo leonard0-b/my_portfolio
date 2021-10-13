@@ -55,3 +55,17 @@
         }
     }
 }
+
+@media all and (max-width: 992px) {
+    #home .container .title h1 {
+        font-size: 70px;
+    }
+
+    #home .container .title h3 {
+        font-size: 30px;
+    }
+
+    #home nav .container .logo .logo-content ul li a {
+        font-size: 13px;
+    }
+}

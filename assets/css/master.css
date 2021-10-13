@@ -83,6 +83,19 @@ html {
   color: rgba(23, 133, 127, 0.6);
 }
 
+@media all and (max-width: 992px) {
+  #home .container .title h1 {
+    font-size: 70px;
+  }
+
+  #home .container .title h3 {
+    font-size: 30px;
+  }
+
+  #home nav .container .logo .logo-content ul li a {
+    font-size: 13px;
+  }
+}
 #about {
   width: 100vw;
   height: 100vh;
@@ -140,7 +153,7 @@ html {
 }
 #progetti .container .row .card .card-img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  height: 600px;
+  height: 500px;
   justify-content: center;
   overflow: hidden;
   border-radius: 3px;
@@ -192,6 +205,20 @@ html {
 
   .compensa {
     margin: 0 -10px;
+  }
+}
+@media all and (max-width: 992px) {
+  #progetti .container .row .card {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  #progetti .container .progetti_title h1 {
+    font-size: 40px;
+  }
+
+  #progetti .container .progetti_title h3 {
+    font-size: 30px;
   }
 }
 #skills {
@@ -325,5 +352,26 @@ html {
 @media all and (max-width: 1200px) {
   #contatti .container {
     width: 90%;
+  }
+}
+@media all and (max-width: 992px) {
+  #contatti .container .contatti_text h1 {
+    font-size: 40px;
+  }
+
+  #contatti .container .others {
+    width: 100%;
+  }
+
+  #contatti .container .contatti_text h3 {
+    font-size: 30px;
+  }
+
+  #contatti .container .others p {
+    font-size: 15px;
+  }
+
+  #contatti .container .others ul li a {
+    font-size: 15px;
   }
 }

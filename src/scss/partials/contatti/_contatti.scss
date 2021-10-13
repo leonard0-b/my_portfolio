@@ -60,3 +60,26 @@
         width: 90%;
     }
 }
+
+@media all and (max-width: 992px) {
+    #contatti .container .contatti_text h1 {
+        font-size: 40px;
+    }
+
+    #contatti .container .others {
+        width: 100%;
+    }
+
+    #contatti .container .contatti_text h3 {
+        font-size: 30px;
+    }
+
+    #contatti .container .others p {
+        font-size: 15px;
+    }
+
+    #contatti .container .others ul li a {
+        font-size: 15px;
+    }
+
+}
