@@ -187,7 +187,7 @@ html {
   }
 
   #progetti .container .row {
-    margin: 0;
+    margin: 0 auto;
   }
 
   #progetti .container .row .card {
@@ -219,6 +219,18 @@ html {
 
   #progetti .container .progetti_title h3 {
     font-size: 30px;
+  }
+
+  #progetti .container .row {
+    width: 90%;
+  }
+
+  #progetti .container .row .card .card-desc h3 {
+    font-size: 23px;
+  }
+
+  #progetti .container .row .card .card-desc p {
+    font-size: 16px;
   }
 }
 #skills {
@@ -290,6 +302,11 @@ html {
 
   #skills .container .row {
     flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 992px) {
+  #skills .container .skills_title h1 {
+    font-size: 40px;
   }
 }
 #contatti {

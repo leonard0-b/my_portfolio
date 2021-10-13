@@ -60,7 +60,7 @@
     }
 
     #progetti .container .row {
-        margin: 0;
+        margin: 0 auto;
     }
 
     #progetti .container .row .card {
@@ -95,6 +95,18 @@
 
     #progetti .container .progetti_title h3 {
         font-size: 30px;
+    }
+
+    #progetti .container .row {
+        width: 90%;
+    }
+
+    #progetti .container .row .card .card-desc h3 {
+        font-size: 23px;
+    }
+
+    #progetti .container .row .card .card-desc p {
+        font-size: 16px;
     }
 
 }
