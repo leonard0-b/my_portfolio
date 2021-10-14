@@ -11,6 +11,7 @@
             }
             h3 {
                 @include subtitle;
+                line-height: 60px;
                 transition: color 0.4s;
                 &.mail {
                     display: inline-block;
@@ -22,7 +23,7 @@
         }
         .others {
             opacity: 0;
-            margin: 30px 0;
+            margin: 50px 0;
             width: 50%;
             justify-content: space-between;
             align-items: center;
@@ -33,6 +34,7 @@
             ul {
                 li {
                     margin: 0 10px;
+                    display: flex;
                     a {
                         color: $descriptions;
                         font-size: 20px;
@@ -60,6 +62,10 @@
     #contatti .container {
         width: 90%;
     }
+
+    #contatti .container .others {
+        width: 80%;
+    }
 }
 
 @media all and (max-width: 992px) {
@@ -67,12 +73,9 @@
         font-size: 40px;
     }
 
-    #contatti .container .others {
-        width: 100%;
-    }
-
     #contatti .container .contatti_text h3 {
         font-size: 30px;
+        line-height: 40px;
     }
 
     #contatti .container .others p {
@@ -85,40 +88,29 @@
 
 }
 
-/* @media all and (max-width: 576px) {
-    #contatti .container .contatti_text h1 {
-        font-size: 30px;
-    }
-
-    #contatti .container .contatti_text h3 {
-        font-size: 25px;
-    }
-
-    #contatti .container .others p {
-        font-size: 10px;
-    }
-
-    #contatti .container .others ul li a {
-        font-size: 10px;
-    }
-
-} */
-
 @media all and (max-width: 576px) {
+    #contatti {
+        padding-bottom: 20px;
+    }
     #contatti .container .contatti_text h1 {
         font-size: 40px;
     }
 
     #contatti .container .contatti_text h3 {
         font-size: 20px;
+        line-height: 28px;
     }
 
     #contatti .container .others p {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     #contatti .container .others ul li a {
-        font-size: 8px;
+        font-size: 9px;
+    }
+
+    #contatti .container .others {
+        width: 100%;
     }
 
 }

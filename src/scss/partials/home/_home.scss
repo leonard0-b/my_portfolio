@@ -22,6 +22,13 @@
                         transition: width 0.8s;
                         li {
                             margin: 0 20px;
+                            font-size: $mid;
+                            font-weight: $medium;
+                            color: $primary_text;
+                            transition: color 0.5s;
+                            &:hover {
+                                color: $descriptions;
+                            }
                             a {
                                 font-size: $mid;
                                 font-weight: $medium;
@@ -35,6 +42,56 @@
                     }
                 }
             }    
+        }
+    }
+    .smartphone {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        background-color: #fff;
+        .container {
+            width: 95%;
+            margin: 0 auto;
+            .logo-smrt {
+                .logo-content-smrt {
+                    height: 80px;
+                    align-items: center;
+                    .smrt {
+                        width: 105px;
+                        overflow: hidden;
+                        transition: width 1s;
+                        &.open {
+                            width: 100%;
+                        }
+                        li {
+                            margin: 0 20px;
+                            font-size: $mid;
+                            font-weight: $medium;
+                            color: $primary_text;
+                            transition: color 0.5s;
+                            &:hover {
+                                color: $descriptions;
+                            }
+                            a {
+                                font-size: $mid;
+                                font-weight: $medium;
+                                color: $primary_text;
+                                transition: color 0.5s;
+                                &:hover {
+                                    color: $descriptions;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo-content {
+            height: 65px;
+            align-items: center;
         }
     }
     .container {
@@ -56,6 +113,16 @@
     }
 }
 
+@media all and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    #home .smartphone {
+        display: flex;
+    }
+}
+
 @media all and (max-width: 992px) {
     #home .container .title h1 {
         font-size: 70px;
@@ -66,6 +133,34 @@
     }
 
     #home nav .container .logo .logo-content ul li a {
-        font-size: 13px;
+        font-size: 18px;
+    }
+
+    #home nav .container .logo .logo-content ul li {
+        font-size: 18px;
+    }
+
+    #home nav .container .logo .logo-content ul li {
+        margin: 0 10px;
     }
 }
+
+@media all and (max-width: 576px) {
+    #home .smartphone .container .logo-smrt .logo-content-smrt .smrt li {
+        font-size: 12px;
+        margin: 0 6px;
+    }
+
+    #home .smartphone .container .logo-smrt .logo-content-smrt .smrt li a {
+        font-size: 12px;
+    }
+
+    #home .smartphone .container .logo-smrt .logo-content-smrt .smrt {
+        width: 60px;
+    }
+
+    #home nav .container .logo .logo-content ul li {
+        margin: 0 6px;
+    }
+}
+

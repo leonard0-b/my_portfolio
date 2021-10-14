@@ -34,6 +34,7 @@
                             &.info {
                                 color: $descriptions;
                                 font-size: 20px;
+                                line-height: 35px;
                             }
                         }
                     }
@@ -84,7 +85,7 @@
     #skills .container .row .experiences ul li p.azienda,
     #skills .container .row .experiences ul li p.data {
         font-size: 16px;
-        line-height: 24px;
+        line-height: 22px;
     }
 
 }

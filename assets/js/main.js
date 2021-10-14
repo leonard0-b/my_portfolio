@@ -42,11 +42,15 @@ var app = new Vue({
 });
 /* animazione tasto nav */
 
-$(".logo-content > ul").mouseenter(function () {
-  $(".logo-content > ul").css("width", "480px");
+$("nav > .container > .logo > .logo-content > ul").mouseenter(function () {
+  $(".logo-content > ul").css("width", "490px");
 });
-$(".logo-content > ul").mouseleave(function () {
+$("nav > .container > .logo > .logo-content > ul").mouseleave(function () {
   $(".logo-content > ul").css("width", "105px");
+});
+$(".smartphone > .container > .logo-smrt > .logo-content-smrt > .smrt").click(function () {
+  $(".smartphone > .container > .logo-smrt > .logo-content-smrt > .smrt").toggleClass("open");
+  console.log("click");
 });
 /* animations */
 

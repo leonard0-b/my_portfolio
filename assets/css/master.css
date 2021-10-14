@@ -55,6 +55,13 @@ html {
 }
 #home nav .container .logo .logo-content ul li {
   margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #17857f;
+  transition: color 0.5s;
+}
+#home nav .container .logo .logo-content ul li:hover {
+  color: rgba(23, 133, 127, 0.8);
 }
 #home nav .container .logo .logo-content ul li a {
   font-size: 20px;
@@ -64,6 +71,54 @@ html {
 }
 #home nav .container .logo .logo-content ul li a:hover {
   color: rgba(23, 133, 127, 0.8);
+}
+#home .smartphone {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+}
+#home .smartphone .container {
+  width: 95%;
+  margin: 0 auto;
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt {
+  height: 80px;
+  align-items: center;
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt .smrt {
+  width: 105px;
+  overflow: hidden;
+  transition: width 1s;
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt .smrt.open {
+  width: 100%;
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt .smrt li {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #17857f;
+  transition: color 0.5s;
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt .smrt li:hover {
+  color: rgba(23, 133, 127, 0.8);
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt .smrt li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #17857f;
+  transition: color 0.5s;
+}
+#home .smartphone .container .logo-smrt .logo-content-smrt .smrt li a:hover {
+  color: rgba(23, 133, 127, 0.8);
+}
+#home .smartphone .logo-content {
+  height: 65px;
+  align-items: center;
 }
 #home .container {
   width: 80%;
@@ -83,6 +138,15 @@ html {
   color: rgba(23, 133, 127, 0.6);
 }
 
+@media all and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+
+  #home .smartphone {
+    display: flex;
+  }
+}
 @media all and (max-width: 992px) {
   #home .container .title h1 {
     font-size: 70px;
@@ -93,7 +157,33 @@ html {
   }
 
   #home nav .container .logo .logo-content ul li a {
-    font-size: 13px;
+    font-size: 18px;
+  }
+
+  #home nav .container .logo .logo-content ul li {
+    font-size: 18px;
+  }
+
+  #home nav .container .logo .logo-content ul li {
+    margin: 0 10px;
+  }
+}
+@media all and (max-width: 576px) {
+  #home .smartphone .container .logo-smrt .logo-content-smrt .smrt li {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+
+  #home .smartphone .container .logo-smrt .logo-content-smrt .smrt li a {
+    font-size: 12px;
+  }
+
+  #home .smartphone .container .logo-smrt .logo-content-smrt .smrt {
+    width: 60px;
+  }
+
+  #home nav .container .logo .logo-content ul li {
+    margin: 0 6px;
   }
 }
 #about {
@@ -275,6 +365,7 @@ html {
 #skills .container .row .experiences ul li p.info {
   color: rgba(23, 133, 127, 0.8);
   font-size: 20px;
+  line-height: 35px;
 }
 #skills .container .row .skills {
   width: calc(50% - 40px);
@@ -314,7 +405,7 @@ html {
 #skills .container .row .experiences ul li p.azienda,
 #skills .container .row .experiences ul li p.data {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
   }
 }
 #contatti {
@@ -335,6 +426,7 @@ html {
 #contatti .container .contatti_text h3 {
   font-size: 45px;
   color: rgba(23, 133, 127, 0.6);
+  line-height: 60px;
   transition: color 0.4s;
 }
 #contatti .container .contatti_text h3.mail {
@@ -345,7 +437,7 @@ html {
 }
 #contatti .container .others {
   opacity: 0;
-  margin: 30px 0;
+  margin: 50px 0;
   width: 50%;
   justify-content: space-between;
   align-items: center;
@@ -356,6 +448,7 @@ html {
 }
 #contatti .container .others ul li {
   margin: 0 10px;
+  display: flex;
 }
 #contatti .container .others ul li a {
   color: rgba(23, 133, 127, 0.8);
@@ -379,18 +472,19 @@ html {
   #contatti .container {
     width: 90%;
   }
+
+  #contatti .container .others {
+    width: 80%;
+  }
 }
 @media all and (max-width: 992px) {
   #contatti .container .contatti_text h1 {
     font-size: 40px;
   }
 
-  #contatti .container .others {
-    width: 100%;
-  }
-
   #contatti .container .contatti_text h3 {
     font-size: 30px;
+    line-height: 40px;
   }
 
   #contatti .container .others p {
@@ -401,38 +495,29 @@ html {
     font-size: 15px;
   }
 }
-/* @media all and (max-width: 576px) {
-    #contatti .container .contatti_text h1 {
-        font-size: 30px;
-    }
-
-    #contatti .container .contatti_text h3 {
-        font-size: 25px;
-    }
-
-    #contatti .container .others p {
-        font-size: 10px;
-    }
-
-    #contatti .container .others ul li a {
-        font-size: 10px;
-    }
-
-} */
 @media all and (max-width: 576px) {
+  #contatti {
+    padding-bottom: 20px;
+  }
+
   #contatti .container .contatti_text h1 {
     font-size: 40px;
   }
 
   #contatti .container .contatti_text h3 {
     font-size: 20px;
+    line-height: 28px;
   }
 
   #contatti .container .others p {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   #contatti .container .others ul li a {
-    font-size: 8px;
+    font-size: 9px;
+  }
+
+  #contatti .container .others {
+    width: 100%;
   }
 }
