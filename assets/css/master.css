@@ -41,7 +41,7 @@ html {
   background-color: #fff;
 }
 #home nav .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 #home nav .container .logo .logo-content {
@@ -82,7 +82,7 @@ html {
   background-color: #fff;
 }
 #home .smartphone .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 #home .smartphone .container .logo-smrt .logo-content-smrt {
@@ -285,16 +285,8 @@ html {
     margin: 30px 10px;
   }
 
-  #progetti .container .progetti_title h1 {
-    margin: 0 10px;
-  }
-
-  #progetti .container .progetti_title h3 {
-    margin: 0 10px;
-  }
-
   .compensa {
-    margin: 0 -10px;
+    margin: 0 -20px;
   }
 }
 @media all and (max-width: 992px) {

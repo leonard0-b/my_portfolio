@@ -44,7 +44,7 @@ var app = new Vue(
 
 /* animazione tasto nav */
 $("nav > .container > .logo > .logo-content > ul").mouseenter(function() {
-    $(".logo-content > ul").css("width", "490px")
+    $(".logo-content > ul").css("width", "590px")
 });
 
 $("nav > .container > .logo > .logo-content > ul").mouseleave(function() {
