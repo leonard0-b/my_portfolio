@@ -1,5 +1,8 @@
 #progetti {
     padding: 100px 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 98;
     .container {
         width: 70%;
         margin: 0 auto;
@@ -101,4 +104,10 @@
         font-size: 16px;
     }
 
+}
+
+@media all and (max-width: 576px) {
+    #progetti {
+        padding: 50px 0;
+    }
 }

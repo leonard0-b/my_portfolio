@@ -1,0 +1,138 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #fff;
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        .logo {
+            .logo-content {
+                height: 80px;
+                align-items: center;
+                ul {
+                    width: 105px;
+                    overflow: hidden;
+                    transition: width 0.8s;
+                    li {
+                        margin: 0 20px;
+                        font-size: $mid;
+                        font-weight: $medium;
+                        color: $primary_text;
+                        transition: color 0.5s;
+                        cursor: pointer;
+                        &:hover {
+                            color: $descriptions;
+                        }
+                        a {
+                            font-size: $mid;
+                            font-weight: $medium;
+                            color: $primary_text;
+                            transition: color 0.5s;
+                            &:hover {
+                                color: $descriptions;
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
+.smartphone {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #fff;
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        .logo-smrt {
+            .logo-content-smrt {
+                height: 80px;
+                align-items: center;
+                .smrt {
+                    width: 105px;
+                    overflow: hidden;
+                    transition: width 1s;
+                    &.open {
+                        width: 100%;
+                    }
+                    li {
+                        margin: 0 20px;
+                        font-size: $mid;
+                        font-weight: $medium;
+                        color: $primary_text;
+                        transition: color 0.5s;
+                        cursor: pointer;
+                        &:hover {
+                            color: $descriptions;
+                        }
+                        a {
+                            font-size: $mid;
+                            font-weight: $medium;
+                            color: $primary_text;
+                            transition: color 0.5s;
+                            &:hover {
+                                color: $descriptions;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo-content {
+        height: 65px;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    .smartphone {
+        display: flex;
+    }
+    
+}
+
+@media all and (max-width: 992px) {
+    nav .container .logo .logo-content ul li a {
+        font-size: 18px;
+    }
+
+    nav .container .logo .logo-content ul li {
+        font-size: 18px;
+    }
+
+    nav .container .logo .logo-content ul li {
+        margin: 0 10px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .smartphone .container .logo-smrt .logo-content-smrt .smrt li {
+        font-size: 12px;
+        margin: 0 6px;
+    }
+
+    .smartphone .container .logo-smrt .logo-content-smrt .smrt li a {
+        font-size: 12px;
+    }
+
+    .smartphone .container .logo-smrt .logo-content-smrt .smrt {
+        width: 60px;
+    }
+
+    nav .container .logo .logo-content ul li {
+        margin: 0 6px;
+    }
+}

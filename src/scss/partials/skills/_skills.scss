@@ -1,5 +1,8 @@
 #skills {
     padding: 100px 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 98;
     .container {
         width: 80%;
         margin: 0 auto;
@@ -86,6 +89,14 @@
     #skills .container .row .experiences ul li p.data {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    #skills  {
+        padding: 0;
+    }
+
+    #skills .container .row .skills {
+        padding-bottom: 60px;
     }
 
 }

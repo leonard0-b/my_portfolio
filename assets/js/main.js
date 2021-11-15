@@ -70,6 +70,14 @@ gsap.to(".about_title", {
   opacity: 1,
   duration: 1
 });
+gsap.from(".w50 > img", {
+  //from muove da destra verso sinistra
+  scrollTrigger: ".about_title",
+  // start the animation when "#two" enters the viewport (once)
+  x: 200,
+  opacity: 0,
+  duration: 2
+});
 gsap.to(".progetti_title", {
   //from muove da destra verso sinistra
   scrollTrigger: ".progetti_title",

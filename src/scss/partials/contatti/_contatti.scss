@@ -1,6 +1,9 @@
 #contatti {
     padding-top: 150px;
     padding-bottom: 50px;
+    background-color: #fff;
+    position: relative;
+    z-index: 98;
     .container {
         width: 80%;
         margin: 0 auto;
@@ -91,6 +94,7 @@
 @media all and (max-width: 576px) {
     #contatti {
         padding-bottom: 20px;
+        padding-top: 50px;
     }
     #contatti .container .contatti_text h1 {
         font-size: 40px;
