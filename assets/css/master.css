@@ -28,13 +28,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #17857f;
+  background: #325FA6;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(23, 133, 127, 0.6);
+  background: #688CD8;
 }
 
 .flex {
@@ -74,21 +74,21 @@ nav .container .logo .logo-content ul li {
   margin: 0 20px;
   font-size: 20px;
   font-weight: 500;
-  color: #17857f;
+  color: #325FA6;
   transition: color 0.5s;
   cursor: pointer;
 }
 nav .container .logo .logo-content ul li:hover {
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
 }
 nav .container .logo .logo-content ul li a {
   font-size: 20px;
   font-weight: 500;
-  color: #17857f;
+  color: #325FA6;
   transition: color 0.5s;
 }
 nav .container .logo .logo-content ul li a:hover {
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
 }
 
 .smartphone {
@@ -120,21 +120,21 @@ nav .container .logo .logo-content ul li a:hover {
   margin: 0 20px;
   font-size: 20px;
   font-weight: 500;
-  color: #17857f;
+  color: #325FA6;
   transition: color 0.5s;
   cursor: pointer;
 }
 .smartphone .container .logo-smrt .logo-content-smrt .smrt li:hover {
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
 }
 .smartphone .container .logo-smrt .logo-content-smrt .smrt li a {
   font-size: 20px;
   font-weight: 500;
-  color: #17857f;
+  color: #325FA6;
   transition: color 0.5s;
 }
 .smartphone .container .logo-smrt .logo-content-smrt .smrt li a:hover {
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
 }
 .smartphone .logo-content {
   height: 65px;
@@ -187,7 +187,7 @@ nav .container .logo .logo-content ul li a:hover {
   margin-top: 80px;
   position: fixed;
   top: 0;
-  background: linear-gradient(to right bottom, #17857f, #2b928c, #3ca099, #4bada6, #5abbb4);
+  background: linear-gradient(to right bottom, #325fa6, #406ab2, #4e75bf, #5b80cb, #688cd8);
 }
 #home .container {
   width: 80%;
@@ -245,17 +245,19 @@ nav .container .logo .logo-content ul li a:hover {
 }
 #about .container .about_title .row .w50 h1 {
   font-size: 60px;
-  color: #17857f;
+  color: #325FA6;
 }
 #about .container .about_title .row .w50 h3 {
   font-size: 45px;
-  color: rgba(23, 133, 127, 0.6);
+  color: rgba(50, 95, 166, 0.6);
 }
 #about .container .about_title .row .w50 p {
   margin-top: 30px;
 }
 #about .container .about_title .row .w50 img {
-  width: 100%;
+  height: 800px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 @media all and (max-width: 1200px) {
@@ -269,6 +271,12 @@ nav .container .logo .logo-content ul li a:hover {
 
   #about .container .about_title .row .w50 p {
     font-size: 16px;
+  }
+}
+@media all and (max-width: 1024px) {
+  #about .container .about_title .row .w50 img {
+    width: 100%;
+    height: auto;
   }
 }
 @media all and (max-width: 576px) {
@@ -286,7 +294,7 @@ nav .container .logo .logo-content ul li a:hover {
   }
 }
 #progetti {
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #fff;
   position: relative;
   z-index: 98;
@@ -301,11 +309,11 @@ nav .container .logo .logo-content ul li a:hover {
 }
 #progetti .container .progetti_title h1 {
   font-size: 60px;
-  color: #17857f;
+  color: #325FA6;
 }
 #progetti .container .progetti_title h3 {
   font-size: 45px;
-  color: rgba(23, 133, 127, 0.6);
+  color: rgba(50, 95, 166, 0.6);
 }
 #progetti .container .row {
   flex-wrap: wrap;
@@ -338,12 +346,12 @@ nav .container .logo .logo-content ul li a:hover {
 }
 #progetti .container .row .card .card-desc h3 {
   font-size: 30px;
-  color: #17857f;
+  color: #325FA6;
   margin-bottom: 15px;
 }
 #progetti .container .row .card .card-desc p {
   font-size: 18px;
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
 }
 
 @media all and (max-width: 1200px) {
@@ -396,7 +404,7 @@ nav .container .logo .logo-content ul li a:hover {
   }
 }
 #skills {
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #fff;
   position: relative;
   z-index: 98;
@@ -411,7 +419,7 @@ nav .container .logo .logo-content ul li a:hover {
 }
 #skills .container .skills_title h1 {
   font-size: 60px;
-  color: #17857f;
+  color: #325FA6;
 }
 #skills .container .row {
   margin: 0 -20px;
@@ -430,15 +438,15 @@ nav .container .logo .logo-content ul li a:hover {
   margin: 10px 0;
 }
 #skills .container .row .experiences ul li p.data {
-  color: rgba(23, 133, 127, 0.6);
+  color: rgba(50, 95, 166, 0.6);
   font-size: 25px;
 }
 #skills .container .row .experiences ul li p.azienda {
-  color: #17857f;
+  color: #325FA6;
   font-size: 23px;
 }
 #skills .container .row .experiences ul li p.info {
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
   font-size: 20px;
   line-height: 35px;
 }
@@ -492,7 +500,7 @@ nav .container .logo .logo-content ul li a:hover {
   }
 }
 #contatti {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 50px;
   background-color: #fff;
   position: relative;
@@ -507,11 +515,11 @@ nav .container .logo .logo-content ul li a:hover {
 }
 #contatti .container .contatti_text h1 {
   font-size: 60px;
-  color: #17857f;
+  color: #325FA6;
 }
 #contatti .container .contatti_text h3 {
   font-size: 45px;
-  color: rgba(23, 133, 127, 0.6);
+  color: rgba(50, 95, 166, 0.6);
   line-height: 60px;
   transition: color 0.4s;
 }
@@ -519,7 +527,7 @@ nav .container .logo .logo-content ul li a:hover {
   display: inline-block;
 }
 #contatti .container .contatti_text h3.mail:hover {
-  color: #17857f;
+  color: #325FA6;
 }
 #contatti .container .others {
   opacity: 0;
@@ -529,7 +537,7 @@ nav .container .logo .logo-content ul li a:hover {
   align-items: center;
 }
 #contatti .container .others p {
-  color: #17857f;
+  color: #325FA6;
   font-size: 20px;
 }
 #contatti .container .others ul li {
@@ -537,7 +545,7 @@ nav .container .logo .logo-content ul li a:hover {
   display: flex;
 }
 #contatti .container .others ul li a {
-  color: rgba(23, 133, 127, 0.8);
+  color: rgba(50, 95, 166, 0.8);
   font-size: 20px;
   transition: color 0.4s;
 }
