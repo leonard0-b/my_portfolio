@@ -65,9 +65,18 @@
         padding-bottom: 60px;
     }
 
-
     #about .container {
         width: 90%;
+    }
+}
+
+@media all and (max-width: 992px) {
+    #home .container .title h1 {
+        font-size: 80px;
+    }
+
+    #home .container .title h3 {
+        font-size: 50px;
     }
 }
 
