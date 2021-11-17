@@ -4,7 +4,8 @@
     margin-top: 80px;
     position: fixed;
     top: 0;
-    background: linear-gradient(to right bottom, #325fa6, #406ab2, #4e75bf, #5b80cb, #688cd8);    .container {
+    background: linear-gradient(to right bottom, #325fa6, #406ab2, #4e75bf, #5b80cb, #688cd8);    
+    .container {
         width: 80%;
         height: 100%;
         margin: 0 auto;
@@ -30,17 +31,13 @@
     #home {
         height: 100vh;
     }
-    
+
     #home .container .title h1 {
         font-size: 80px;
     }
 
     #home .container .title h3 {
         font-size: 50px;
-    }
-
-    #home .container {
-        align-items: baseline;
     }
 }
 
