@@ -278,6 +278,15 @@ nav .container .logo .logo-content ul li a:hover {
     width: 100%;
     height: auto;
   }
+
+  #about {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  #about .container {
+    width: 90%;
+  }
 }
 @media all and (max-width: 576px) {
   #about .container .about_title .row .w50 {
