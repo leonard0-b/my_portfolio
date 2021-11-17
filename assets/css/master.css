@@ -207,6 +207,23 @@ nav .container .logo .logo-content ul li a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media all and (max-width: 992px) {
+  #home {
+    height: 100vh;
+  }
+
+  #home .container .title h1 {
+    font-size: 80px;
+  }
+
+  #home .container .title h3 {
+    font-size: 50px;
+  }
+
+  #home .container {
+    align-items: baseline;
+  }
+}
 @media all and (max-width: 576px) {
   #home .container .title h1 {
     font-size: 80px;
@@ -286,15 +303,6 @@ nav .container .logo .logo-content ul li a:hover {
 
   #about .container {
     width: 90%;
-  }
-}
-@media all and (max-width: 992px) {
-  #home .container .title h1 {
-    font-size: 80px;
-  }
-
-  #home .container .title h3 {
-    font-size: 50px;
   }
 }
 @media all and (max-width: 576px) {
