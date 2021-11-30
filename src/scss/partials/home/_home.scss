@@ -1,8 +1,8 @@
 #home {
+    margin: 0 auto;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 100vh;
     margin-top: 80px;
-    position: fixed;
     top: 0;
     background: linear-gradient(to right bottom, #325fa6, #406ab2, #4e75bf, #5b80cb, #688cd8);    
     .container {
@@ -24,14 +24,7 @@
     }
 }
 
-@media all and (max-width: 1200px) {
-}
-
 @media all and (max-width: 992px) {
-    #home {
-        height: 100vh;
-    }
-
     #home .container .title h1 {
         font-size: 80px;
     }
@@ -41,21 +34,27 @@
     }
 }
 
+@media all and(max-width: 850px) {
+    #home {
+        height: calc(100vh - 80px);
+    }
+}
+
 @media all and (max-width: 576px) {
+    #home {
+        height: 100vh;
+    }
+
+    #home .container {
+        width: 90%;
+    }
+
     #home .container .title h1 {
         font-size: 80px;
     }
 
     #home .container .title h3 {
-        font-size: 60px;
-    }
-
-    #home .container .title {
-        margin-top: 150px;
-    }
-
-    #home .container {
-        align-items: unset;
+        font-size: 40px;
     }
 }
 
